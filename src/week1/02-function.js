@@ -8,7 +8,7 @@ console.log(greetUser('민지'))
 
 // 2. 원가 계산
 const calculateOriginalPrice = function (price) {
-  return price / (1 + 0.033)
+  return parseInt(price / (1 + 0.033))
 }
 
 console.log(calculateOriginalPrice(6000))
