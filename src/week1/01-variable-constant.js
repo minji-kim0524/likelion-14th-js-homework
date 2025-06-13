@@ -11,8 +11,7 @@ const absoluteZero = '-273.15°C'
 console.log(absoluteZero)
 
 // 3. "로그인 여부"를 확인하는 불리언 타입 변수을 선언하고 적절한값을 할당하세요.
-let isLoggedIn
-isLoggedIn = true
+let isLoggedIn = true
 
 console.log(isLoggedIn)
 
@@ -22,7 +21,7 @@ let userAge = 30
 console.log(userAge)
 
 // 5. "상품 가격(예: 39,900원)"을 담는 변수를 작성하세요.
-let itemPrice
+let itemPrice = 35000
 
 // 6. 웹 페이지의 "배경색"을 담는 상수를 작성하고 적절한 값을 할당하세요.
 const backgroundColor = 'skyblue'
@@ -40,10 +39,9 @@ let currentPage = 5
 console.log(currentPage)
 
 // 9. "회원 등급('VIP', '골드', '실버' 중 하나)"을 담는 변수를 작성해보세요.
-let membershipLevel
+let membershipLevel = 'VVIP'
 
 // 10. "버튼이 클릭되었는지 여부"를 담는 변수를 선언하고 불리언 타입 값을 설정하세요.
-let isCliked
-isCliked = true
+let isCliked = true
 
 console.log(isCliked)
