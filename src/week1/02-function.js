@@ -20,14 +20,6 @@ const registrationCard = {
   gender: 'female'
 }
 
-// function canSellAlcohol(age) {
-//   if(age >= 19) {
-//   return "주류 구매가 가능합니다."
-// }else {
-//   return "19세 미만으로 주류 구매가 불가합니다."
-// }
-// }
-
 const canSellAlcohol = age => {
   if(age >= 19) {
   return "주류 구매가 가능합니다."
@@ -44,14 +36,14 @@ const getDiscountedPrice = (originalPrice, discountPercent) => originalPrice-(or
 console.log(getDiscountedPrice(50000, 0.2))
 
 // 5. 등급 판단
-function ranking (score) {
-  if(90 <= score  &&  score<= 100) {
+const ranking = score => {
+  if(score >= 90) {
     return {score: score, grade: 'A', description: '매우 우수'}
-  }else if(80 <= score && score <= 89){
+  }else if(score >= 80){
     return {score: score, grade: 'B', description: '우수'}
-  }else if(70 <= score && score <= 79){
+  }else if(score >= 70){
     return {score: score, grade: 'C', description: '보통'}
-  }else if(60 <= score && score <= 69){
+  }else if(score >= 60){
     return {score: score, grade: 'D', description: '미달, 통과 기준 근접'}
   }else {
     return {score: score, grade: 'F', description: '낙제'}
