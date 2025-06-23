@@ -1,0 +1,81 @@
+.accordion_container {
+  max-inline-size: 23.125rem;
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: .75rem;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 13.9375rem;
+  padding-inline: 1.25rem;
+  padding-block-start: 2.625rem;
+}
+
+h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: .25rem;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.accordion {
+  max-block-size: 9.75rem;
+  background-color: #EEF4FF;
+  border-radius: 16px;
+  padding-inline: 1.5rem;
+
+  .accordion_header {
+    
+    button {
+      inline-size: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      column-gap: .9375rem;
+      background-color: #EEF4FF;
+      border: none;
+      border-radius: 16px;
+      text-align: left;
+      padding: 0;
+    }
+  }
+
+    &.is-open {
+
+    svg {
+      rotate: -180deg;
+    }
+
+    .accordion_content {
+      display: grid;
+    }
+
+  }
+}
+  .accordion_title{
+    color: #191F28;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    letter-spacing: -0.0313rem;
+  }
+
+  .accordion_content {
+    display: none;
+    grid-template-columns: 1fr;
+    margin-top: .5rem;
+    padding-block-end: 1.5rem;
+    padding-inline-end: 1.5rem;
+
+    p{
+    font-size: .9375rem;
+    font-weight: 400;
+    letter-spacing: -0.0313rem;
+    margin: 0;
+    }
+  }
