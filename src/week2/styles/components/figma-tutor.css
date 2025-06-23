@@ -26,13 +26,13 @@ h2 {
   font-weight: 700;
 }
 
-.accordion {
+.accordion-wrapper {
   max-block-size: 9.75rem;
   background-color: #EEF4FF;
   border-radius: 16px;
   padding-inline: 1.5rem;
 
-  .accordion_header {
+  .accordion {
     
     button {
       inline-size: 100%;
@@ -54,13 +54,13 @@ h2 {
       rotate: -180deg;
     }
 
-    .accordion_content {
+    .content {
       display: grid;
     }
 
   }
 }
-  .accordion_title{
+  .title{
     color: #191F28;
     font-size: 1rem;
     font-weight: 700;
@@ -68,7 +68,7 @@ h2 {
     letter-spacing: -0.0313rem;
   }
 
-  .accordion_content {
+  .content {
     display: none;
     grid-template-columns: 1fr;
     margin-top: .5rem;
