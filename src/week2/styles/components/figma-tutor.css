@@ -1,17 +1,20 @@
 .accordion_container {
-  max-inline-size: 23.125rem;
+  max-inline-size: 375px;
   padding-inline: 1.25rem;
   display: flex;
   flex-flow: column nowrap;
   row-gap: .75rem;
+  margin: auto;
 }
 
 .menu {
+  max-inline-size: 375px;
   display: flex;
   flex-flow: row nowrap;
-  column-gap: 13.9375rem;
+  justify-content: space-between;
   padding-inline: 1.25rem;
   padding-block-start: 2.625rem;
+  margin: auto;
 }
 
 h2 {
