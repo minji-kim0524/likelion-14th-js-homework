@@ -1,6 +1,6 @@
 {
   const accordionContainer = document.querySelector('.accordion_container')
-  const accordions = accordionContainer.querySelectorAll('.accordion')
+  const accordions = accordionContainer.querySelectorAll('.accordion-wrapper')
   
     accordions.forEach((accordion) => {
     const accordionButton = accordion.querySelector('button')
