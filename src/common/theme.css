@@ -11,12 +11,29 @@
   --black: #121212;
   --white: #ffffff;
 
-  /* 사이즈 */
-  --size--6: 6px;
+  /* 폰트 사이즈 */
+  --font-size--6: 6px;
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-48: 48px;
+
+  /* 간격 사이즈(margin, padding) */
+  --size-6: 6px;
   --size-10: 10px;
   --size-12: 12px;
   --size-16: 16px;
   --size-18: 18px;
   --size-20: 20px;
   --size-24: 24px;
+  --szie-38: 38px;
+  --size-40: 40px;
+  --size-44: 44px;
+
+  /* radius 사이즈 */
+  --radius-8: 8px;
 }
