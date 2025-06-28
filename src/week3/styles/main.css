@@ -1,0 +1,7 @@
+/* 공통 */
+@import '../../common/a11y.css';
+@import '../../common/base.css';
+@import '../../common/theme.css';
+@import '../../common/modern-reset.css';
+
+@import './components/tabs.css' layer(components);
