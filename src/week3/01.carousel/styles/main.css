@@ -1,6 +1,7 @@
-@import "/src/common/a11y.css";
-@import "/src/common/base.css";
-@import "/src/common/theme.css";
-@import "/src/common/modern-reset.css";
+/* 공통 */
+@import '../../../common/a11y.css';
+@import '../../../common/base.css';
+@import '../../../common/theme.css';
+@import '../../../common/modern-reset.css';
 
 @import "./components/carousel.css" layer(components);
