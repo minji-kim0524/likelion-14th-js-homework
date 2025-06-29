@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="다양한 게임을 추천합니다." />
+    <title>추천게임(Carousel활용)</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./assets/icon-game.svg" type="image/svg" />
+  </head>
+  <body>
+    <section class="carouselContainer">
+      <h2 class="carouselTitle">
+        <img src="./assets/state=Default.svg" alt="추천게임" />
+      </h2>
+      <div class="carouselContents is-selected">
+        <article class="carousleContent">
+          <img
+            src="./assets/크로노오디세이.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">크로노 오디세이</h3>
+          <p class="gameDescription">멈춰 있던 시간이 흐른다</p>
+          <p class="gameType">MMORPG</p>
+        </article>
+        <article class="carousleContent">
+          <img
+            src="./assets/아키에이지워.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">아키에이지 워</h3>
+          <p class="gameDescription">시대의 전설을 향해</p>
+          <p class="gameType">MMORPG</p>
+        </article>
+      </div>
+      <div class="carouselContents">
+        <article class="carousleContent">
+          <img
+            src="./assets/패스오브엑자일2.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">패스 오브 엑자일 2</h3>
+          <p class="gameDescription">얼리 엑세스 오픈!</p>
+          <p class="gameType">핵앤슬래시</p>
+        </article>
+        <article class="carousleContent">
+          <img
+            src="./assets/오딘_발할라라이징.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">오딘 : 반할라 라이징</h3>
+          <p class="gameDescription">신의 영역을 차지하라</p>
+          <p class="gameType">MMORPG</p>
+        </article>
+      </div>
+      <div class="carouselContents">
+        <article class="carousleContent">
+          <img
+            src="./assets/롬_리멤버오브마제스티.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">롬: 리멤버 오브 마제스티</h3>
+          <p class="gameDescription">세계는 하나의 전장이 된다</p>
+          <p class="gameType">MMORPG</p>
+        </article>
+        <article class="carousleContent">
+          <img
+            src="./assets/배틀그라운드.jpg"
+            width="160"
+            height="172"
+            alt=""
+          />
+          <h3 class="gameName">배틀그라운드</h3>
+          <p class="gameDescription">최후까지 생존하라!</p>
+          <p class="gameType">배틀로얄</p>
+        </article>
+      </div>
+      <div class="carouselBtn">
+        <button type="button">
+          <img src="./assets/탐색버튼(왼쪽).svg" alt="이전 탐색" />
+        </button>
+        <span>1 / 3</span>
+        <button type="button">
+          <img src="./assets/탐색버튼(오른쪽).svg" alt="다음 탐색" />
+        </button>
+      </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
