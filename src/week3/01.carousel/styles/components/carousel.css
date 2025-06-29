@@ -1,0 +1,88 @@
+body {
+  background-color: var(--gray-100);
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.carouselContainer {
+  background-color: var(--white);
+  border-radius: var(--radius-16);
+  inline-size: 24rem;
+  block-size: 23.25rem;
+  padding-block-start: var(--size-14);
+  padding-inline: var(--size-24);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .carouselBtn {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    block-size: 3.875rem;
+    padding-block-end: var(--size-11);
+    margin-block-start: var(--size-11);
+
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .carouselContents {
+
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: var(--size-16);
+    display: none;
+
+    &.is-selected {
+      display: flex;
+    }
+
+    img {
+      border-radius: var(--radius-8);
+    }
+
+    .gameName {
+      font-size: var(--font-size-16);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--black);
+      margin-block-end: var(--size-2);
+      white-space: nowrap;
+    }
+
+    .gameDescription {
+      font-size: var(--font-size-14);
+      font-weight: 350;
+      line-height: 1.2;
+      color: var(--black);
+      margin-block-end: var(--size-8);
+    }
+
+    .gameType {
+      font-size: var(--font-size-14);
+      font-weight: 350;
+      line-height: 1.2;
+      color: var(--gray-800);
+    }
+  }
+}
