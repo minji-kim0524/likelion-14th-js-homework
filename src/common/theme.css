@@ -1,9 +1,9 @@
 :root {
   /* 색상 */
-  --toss-blue: #0064FF;
+  --toss-blue: #0064ff;
   --toss-gray: #202632;
   --blue-100: #c5d0f0;
-  --blue-900: #1E3269;
+  --blue-900: #1e3269;
   --gray-100: #f2f4f6;
   --gray-700: #4e5968;
   --gray-800: #333d4b;
@@ -15,6 +15,7 @@
   --font-size--6: 6px;
   --font-size-10: 10px;
   --font-size-12: 12px;
+  --font-size-14: 14px;
   --font-size-16: 16px;
   --font-size-17: 17px;
   --font-size-18: 18px;
@@ -23,9 +24,13 @@
   --font-size-48: 48px;
 
   /* 간격 사이즈(margin, padding) */
+  --size-2: 2px;
   --size-6: 6px;
+  --size-8: 8px;
   --size-10: 10px;
+  --size-11: 11px;
   --size-12: 12px;
+  --size-14: 14px;
   --size-16: 16px;
   --size-18: 18px;
   --size-20: 20px;
@@ -36,4 +41,5 @@
 
   /* radius 사이즈 */
   --radius-8: 8px;
+  --radius-16: 16px;
 }

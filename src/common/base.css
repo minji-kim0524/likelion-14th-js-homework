@@ -2,3 +2,9 @@
 a {
   text-decoration: none;
 }
+
+/* 목록 스타일 */
+ul,
+li {
+  list-style: none;
+}
