@@ -1,0 +1,278 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 5.5rem;
+}
+
+.textArea {
+  margin-block-start: 8rem;
+  margin-block-end: 18.0625rem;
+  margin-inline-start: 5.5rem;
+
+  .likeLion {
+    display: inline-block;
+    font-size: var(--font-size-16);
+    font-weight: 700;
+    color: var(--red-700);
+    margin-block-end: 5.5rem;
+    margin-block-start: 0;
+  }
+
+  .landingContentTitle {
+    inline-size: 41.75rem;
+    margin-block-end: 4rem;
+
+    p {
+      display: inline-block;
+      margin: 0;
+
+      &:nth-child(1) {
+        font-size: var(--font-size-86);
+        font-weight: 100;
+        color: var(--red-700);
+        line-height: 1.2;
+        animation: stretch 1.8s backwards;
+      }
+
+      &:nth-child(2) {
+        font-size: var(--font-size-86);
+        font-weight: 700;
+        color: var(--red-800);
+        line-height: 1.2;
+        animation: show 10s backwards;
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+    inline-size: 18.6875rem;
+    font-size: var(--font-size-20);
+    font-weight: 350;
+    color: var(--black-900);
+    line-height: 1.4;
+    margin-block-end: var(--size-84);
+  }
+
+  .linkGroup {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: var(--size-52);
+    align-items: center;
+
+    a {
+      display: inline-block;
+
+      &:nth-child(1) {
+        inline-size: 14.5rem;
+        border-radius: 100px;
+        background-color: var(--black);
+        font-size: var(--font-size-24);
+        font-weight: 500;
+        color: var(--white);
+        white-space: nowrap;
+        text-align: center;
+        padding-inline: var(--size-36);
+        padding-block: var(--size-12);
+
+        &:hover {
+          background-color: var(--gray-800);
+        }
+      }
+
+      &:nth-child(2) {
+        inline-size: 13.125rem;
+        font-size: var(--font-size-24);
+        font-weight: 500;
+        color: var(--red-700);
+        white-space: nowrap;
+        padding-inline: var(--size-36);
+        padding-block: var(--size-12);
+      }
+    }
+  }
+}
+
+.graphicArea {
+  position: relative;
+  inline-size: 52.875rem;
+  margin-block-start: 4rem;
+  margin-block-end: 3.8125rem;
+  margin-inline-end: 5.5rem;
+
+  .face-01 {
+    position: absolute;
+    top: 19.6875rem;
+    left: 19.6875rem;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  .face-02 {
+    position: absolute;
+    top: 19.6875rem;
+    left: 19.6875rem;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  /* shape position 설정 */
+  .shape-01 {
+    position: absolute;
+    top: 4.0625rem;
+    left: 35.3125rem;
+  }
+
+  .shape-02 {
+    position: absolute;
+    top: 11.875rem;
+    left: 11.875rem;
+  }
+
+  .shape-03 {
+    position: absolute;
+    top: 43.0625rem;
+    left: 19.6875rem;
+    opacity: 0;
+  }
+
+  .shape-04 {
+    position: absolute;
+    top: 43.0625rem;
+    left: 11.875rem;
+  }
+
+  .shape-05 {
+    position: absolute;
+    top: 27.5rem;
+    left: 4.0625rem;
+  }
+
+  .shape-06 {
+    position: absolute;
+    top: 50.875rem;
+    left: 15.75rem;
+  }
+
+  .shape-07 {
+    position: absolute;
+    top: 50.875rem;
+    left: 11.875rem;
+  }
+
+  .shape-08 {
+    position: absolute;
+    top: 35.3125rem;
+    left: 19.6875rem;
+  }
+
+  .shape-09 {
+    position: absolute;
+    top: 19.6875rem;
+    left: 11.8125rem;
+    opacity: 0;
+  }
+
+  .shape-10 {
+    position: absolute;
+    top: 35.3125rem;
+    left: 11.875rem;
+  }
+
+  .shape-11 {
+    position: absolute;
+    top: 27.5rem;
+    left: 11.875rem;
+  }
+
+  .shape-12 {
+    position: absolute;
+    top: 11.875rem;
+    left: 27.5rem;
+  }
+
+  .shape-13 {
+    position: absolute;
+    top: 35.3125rem;
+    left: 35.3125rem;
+  }
+
+  .shape-14 {
+    position: absolute;
+    top: 27.5rem;
+    left: 35.3125rem;
+  }
+
+  .shape-15 {
+    position: absolute;
+    top: 19.6875rem;
+    left: 35.3125rem;
+  }
+
+  .shape-16 {
+    position: absolute;
+    top: 11.875rem;
+    left: 35.3125rem;
+  }
+
+  /* line position 설정 */
+  .line-01 {
+    position: absolute;
+    top: 11.9375rem;
+    left: 2.5625rem;
+  }
+
+  .line-02 {
+    position: absolute;
+    top: 27.5rem;
+    left: 1.9375rem;
+  }
+
+  .line-03 {
+    position: absolute;
+    top: 43.125rem;
+  }
+
+  .line-04 {
+    position: absolute;
+    top: 1.75rem;
+    left: 43.125rem;
+  }
+
+  .line-05 {
+    position: absolute;
+    left: 11.9375rem;
+  }
+
+  .line-06 {
+    position: absolute;
+    top: 7.625rem;
+    left: 27.5rem;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
