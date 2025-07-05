@@ -5,11 +5,20 @@
   --blue-100: #c5d0f0;
   --blue-900: #1e3269;
   --gray-100: #f2f4f6;
+  --gray-200: #A2A0A0;
   --gray-700: #4e5968;
   --gray-800: #333d4b;
   --gray-900: #191f28;
+  --green-50: #DFE8E0;
   --black: #121212;
   --white: #ffffff;
+  --red-700: #B31116;
+  --black-900: #1D1316;
+  --orange-50: #E9D4B4;
+  --orange-300: #FF6000;
+  --orange-800: #B84601;
+  --yellow-500: #FFD528;
+  
 
   /* 폰트 사이즈 */
   --font-size--6: 6px;
@@ -22,6 +31,7 @@
   --font-size-20: 20px;
   --font-size-24: 24px;
   --font-size-48: 48px;
+  --font-szie-86: 86px;
 
   /* 간격 사이즈(margin, padding) */
   --size-2: 2px;
@@ -35,9 +45,12 @@
   --size-18: 18px;
   --size-20: 20px;
   --size-24: 24px;
+  --size-36: 36px;
   --size-38: 38px;
   --size-40: 40px;
   --size-44: 44px;
+  --size-52: 52px;
+  --size-84: 84px;
 
   /* radius 사이즈 */
   --radius-8: 8px;
