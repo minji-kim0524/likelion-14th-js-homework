@@ -13,6 +13,7 @@
   --black: #121212;
   --white: #ffffff;
   --red-700: #B31116;
+  --red-800: #860f13;
   --black-900: #1D1316;
   --orange-50: #E9D4B4;
   --orange-300: #FF6000;
@@ -31,7 +32,7 @@
   --font-size-20: 20px;
   --font-size-24: 24px;
   --font-size-48: 48px;
-  --font-szie-86: 86px;
+  --font-size-86: 86px;
 
   /* 간격 사이즈(margin, padding) */
   --size-2: 2px;
