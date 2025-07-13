@@ -1,4 +1,4 @@
-// 위쪽 방향 트리거
+{// 위쪽 방향 트리거
 {
   const popover = document.querySelector('.popover')
   const trigger = document.querySelector('.popover-trigger')
@@ -76,7 +76,7 @@
   const popoverPositon = popover.getBoundingClientRect()
   const popoverPositonTop = triggerPositionCenter - popoverPositon.height / 2
 
-  const popoverPositionRight = tirggerPositon.right - popoverPositon.width - 100
+  const popoverPositionRight = tirggerPositon.right - popoverPositon.width - 600
   popover.style.setProperty('right', `-${popoverPositionRight}px`)
   popover.style.setProperty('top', `${popoverPositonTop}px`)
 
@@ -98,11 +98,17 @@
 
 }
 
-// 아래 방향 트리거
+// 아래 방향 트리거 & 팝오버 js 생성
 {
-
   const [, , , trigger] = document.querySelectorAll('.popover-trigger')
-  const [, , , popover] = document.querySelectorAll('.popover')
+  const popover = document.createElement('div')
+  popover.classList.add('popover')
+  const popoverContent = document.createElement('p')
+  popoverContent.textContent = `팝오버(Popover)는 추가 정보를 담는 UI 요소입니다. 사용자가 버튼을 클릭하면 팝오버가 나타납니다.`
+  popover.dataset.position = trigger.dataset.popoverPosition
+  popover.append(popoverContent)
+  const grid = document.querySelector('.grid')
+  grid.append(popover)
 
   const triggerPosition = trigger.getBoundingClientRect()
   const triggerPositionCenter = (triggerPosition.left + triggerPosition.right) / 2
@@ -112,7 +118,7 @@
 
   popover.style.setProperty('left', `${popoverPositionLeft}px`)
 
-  const popoverPositionBottom = triggerPosition.bottom - popoverPosition.height - 200
+  const popoverPositionBottom = triggerPosition.bottom - popoverPosition.height - 100
 
   popover.style.setProperty('bottom', `-${popoverPositionBottom}px`)
   popover.setAttribute('hidden', 'true')
@@ -130,5 +136,24 @@
     if(target.closest('.popover') || target.closest('.popover-trigger')) return
     popover.setAttribute('hidden', 'true')
   })
+
+}
+
+// 함수 선언
+function generateRandomID(length = 5) {
+  return `popover-${Math.random().toString(36).substring(2, length+2)}`
+}
+
+function createPopover(trigger) {
+  const popover = document.createElement('div')
+  popover.classList.add('.popover')
+  const popoverContent = document.createElement('p')
+  popoverContent.textContent = `팝오버(Popover)는 추가 정보를 담는 UI 요소입니다. 사용자가 버튼을 클릭하면 팝오버가 나타납니다.`
+  popover.dataset.position = trigger.dataset.popoverPosition
+  const target = trigger.setAttribute('dats-target', '')
+  popover.dataset.id = target
+  popover.append(popoverContent)
+  document.body.append(popover)
+}
 
 }
